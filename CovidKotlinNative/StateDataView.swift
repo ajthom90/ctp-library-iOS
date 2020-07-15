@@ -17,6 +17,7 @@ struct StateDataView: View {
                 Text("\(daily.formattedDate())")
             }
         }.navigationBarTitle(stateNameMap[state.state] ?? state.state)
+        .navigationTitle(stateNameMap[state.state] ?? state.state)
     }
 }
 
