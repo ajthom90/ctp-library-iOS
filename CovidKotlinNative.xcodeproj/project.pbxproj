@@ -13,6 +13,10 @@
 		4153614824BE201300050748 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4153614724BE201300050748 /* Preview Assets.xcassets */; };
 		4153615324BE201300050748 /* CovidKotlinNativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153615224BE201300050748 /* CovidKotlinNativeTests.swift */; };
 		4153615E24BE201300050748 /* CovidKotlinNativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153615D24BE201300050748 /* CovidKotlinNativeUITests.swift */; };
+		4153617B24BE315300050748 /* StateDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153617A24BE315300050748 /* StateDataView.swift */; };
+		4153617D24BE322600050748 /* StateDailyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153617C24BE322600050748 /* StateDailyDataView.swift */; };
+		4153617F24BE3E5A00050748 /* CovidTrackingShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4153617E24BE3E5A00050748 /* CovidTrackingShared.framework */; };
+		4153618024BE3E5A00050748 /* CovidTrackingShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4153617E24BE3E5A00050748 /* CovidTrackingShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4153618124BE3E5A00050748 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4153618024BE3E5A00050748 /* CovidTrackingShared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4153613D24BE201200050748 /* CovidKotlinNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidKotlinNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4153614024BE201200050748 /* CovidKotlinNativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidKotlinNativeApp.swift; sourceTree = "<group>"; };
@@ -45,6 +63,10 @@
 		4153615924BE201300050748 /* CovidKotlinNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidKotlinNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4153615D24BE201300050748 /* CovidKotlinNativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidKotlinNativeUITests.swift; sourceTree = "<group>"; };
 		4153615F24BE201300050748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4153616C24BE21BE00050748 /* xcode-frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "xcode-frameworks"; path = "../../build/xcode-frameworks"; sourceTree = "<group>"; };
+		4153617A24BE315300050748 /* StateDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDataView.swift; sourceTree = "<group>"; };
+		4153617C24BE322600050748 /* StateDailyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDailyDataView.swift; sourceTree = "<group>"; };
+		4153617E24BE3E5A00050748 /* CovidTrackingShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CovidTrackingShared.framework; path = "../../build/xcode-frameworks/CovidTrackingShared.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4153617F24BE3E5A00050748 /* CovidTrackingShared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +102,7 @@
 				4153615124BE201300050748 /* CovidKotlinNativeTests */,
 				4153615C24BE201300050748 /* CovidKotlinNativeUITests */,
 				4153613E24BE201200050748 /* Products */,
+				4153616B24BE21BE00050748 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,10 +120,12 @@
 			isa = PBXGroup;
 			children = (
 				4153614024BE201200050748 /* CovidKotlinNativeApp.swift */,
-				4153614224BE201200050748 /* ContentView.swift */,
 				4153614424BE201300050748 /* Assets.xcassets */,
 				4153614924BE201300050748 /* Info.plist */,
 				4153614624BE201300050748 /* Preview Content */,
+				4153614224BE201200050748 /* ContentView.swift */,
+				4153617A24BE315300050748 /* StateDataView.swift */,
+				4153617C24BE322600050748 /* StateDailyDataView.swift */,
 			);
 			path = CovidKotlinNative;
 			sourceTree = "<group>";
@@ -130,6 +156,15 @@
 			path = CovidKotlinNativeUITests;
 			sourceTree = "<group>";
 		};
+		4153616B24BE21BE00050748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4153617E24BE3E5A00050748 /* CovidTrackingShared.framework */,
+				4153616C24BE21BE00050748 /* xcode-frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4153616224BE201300050748 /* Build configuration list for PBXNativeTarget "CovidKotlinNative" */;
 			buildPhases = (
+				4153617124BE227100050748 /* Run Script */,
 				4153613924BE201200050748 /* Sources */,
 				4153613A24BE201200050748 /* Frameworks */,
 				4153613B24BE201200050748 /* Resources */,
+				4153618124BE3E5A00050748 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,12 +291,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4153617124BE227100050748 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"$SRCROOT/../../build/xcode-frameworks\"\nrm -rf CovidTrackingShared.framework\nrm -rf CovidTrackingShared.framework.dSYM\n./gradlew build -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4153613924BE201200050748 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4153617D24BE322600050748 /* StateDailyDataView.swift in Sources */,
 				4153614324BE201200050748 /* ContentView.swift in Sources */,
+				4153617B24BE315300050748 /* StateDataView.swift in Sources */,
 				4153614124BE201200050748 /* CovidKotlinNativeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +481,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CovidKotlinNative/Preview Content\"";
 				DEVELOPMENT_TEAM = LL334G7KP2;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../build/xcode-frameworks";
 				INFOPLIST_FILE = CovidKotlinNative/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,6 +504,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CovidKotlinNative/Preview Content\"";
 				DEVELOPMENT_TEAM = LL334G7KP2;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../build/xcode-frameworks";
 				INFOPLIST_FILE = CovidKotlinNative/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
