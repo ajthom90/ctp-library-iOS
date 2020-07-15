@@ -11,7 +11,7 @@ import SwiftUI
 struct CovidKotlinNativeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StateListView()
         }
     }
 }

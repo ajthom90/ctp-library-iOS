@@ -8,36 +8,45 @@
 import SwiftUI
 import CovidTrackingShared
 
-struct ContentView: View {
+struct StateListView: View {
     var fetcher = DailyDataFetcher()
     @State var data: [StateData] = []
+    @State var dataLoaded = false
     
     var body: some View {
         NavigationView {
-            List(data, id: \.state) { state in
-                NavigationLink(
-                    destination: StateDataView(state: state),
-                    label: {
-                        HStack {
-                            Text(stateNameMap[state.state] ?? state.state)
-                            Spacer()
-                            Text("\(state.dailyData[0].positive ?? 0)")
-                        }
-                    })
+            List {
+                if (!dataLoaded) {
+                    Text("Loading...")
+                }
+                else {
+                    ForEach(data, id: \.state) { state in
+                        NavigationLink(
+                            destination: StateDataView(state: state),
+                            label: {
+                                HStack {
+                                    Text(stateNameMap[state.state] ?? state.state)
+                                    Spacer()
+                                    Text("\(state.dailyData[0].positive ?? 0)")
+                                }
+                            })
+                    }
+                }
             }.navigationBarTitle("States")
         }.onAppear {
             fetcher.getDailyData { (data) in
                 DispatchQueue.main.async {
                     self.data = data
+                    self.dataLoaded = true
                 }
             }
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct StateListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StateListView()
     }
 }
 

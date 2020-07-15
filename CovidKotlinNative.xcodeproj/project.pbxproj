@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4153614124BE201200050748 /* CovidKotlinNativeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153614024BE201200050748 /* CovidKotlinNativeApp.swift */; };
-		4153614324BE201200050748 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153614224BE201200050748 /* ContentView.swift */; };
+		4153614324BE201200050748 /* StateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153614224BE201200050748 /* StateListView.swift */; };
 		4153614524BE201300050748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4153614424BE201300050748 /* Assets.xcassets */; };
 		4153614824BE201300050748 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4153614724BE201300050748 /* Preview Assets.xcassets */; };
 		4153615324BE201300050748 /* CovidKotlinNativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153615224BE201300050748 /* CovidKotlinNativeTests.swift */; };
@@ -53,7 +53,7 @@
 /* Begin PBXFileReference section */
 		4153613D24BE201200050748 /* CovidKotlinNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidKotlinNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4153614024BE201200050748 /* CovidKotlinNativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidKotlinNativeApp.swift; sourceTree = "<group>"; };
-		4153614224BE201200050748 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4153614224BE201200050748 /* StateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateListView.swift; sourceTree = "<group>"; };
 		4153614424BE201300050748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4153614724BE201300050748 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4153614924BE201300050748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 				4153614424BE201300050748 /* Assets.xcassets */,
 				4153614924BE201300050748 /* Info.plist */,
 				4153614624BE201300050748 /* Preview Content */,
-				4153614224BE201200050748 /* ContentView.swift */,
+				4153614224BE201200050748 /* StateListView.swift */,
 				4153617A24BE315300050748 /* StateDataView.swift */,
 				4153617C24BE322600050748 /* StateDailyDataView.swift */,
 			);
@@ -318,7 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4153617D24BE322600050748 /* StateDailyDataView.swift in Sources */,
-				4153614324BE201200050748 /* ContentView.swift in Sources */,
+				4153614324BE201200050748 /* StateListView.swift in Sources */,
 				4153617B24BE315300050748 /* StateDataView.swift in Sources */,
 				4153614124BE201200050748 /* CovidKotlinNativeApp.swift in Sources */,
 			);
